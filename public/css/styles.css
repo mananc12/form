@@ -1,0 +1,248 @@
+
+body{
+    height: 100vh;
+    font-family: Oswald,Helvetica Neue,Arial,sans-serif;
+    margin: 0;
+    background: linear-gradient(to right,  #dd3967, #3287db);
+}
+  
+.title{
+    color: whitesmoke;
+    font-family: Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+footer{
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 200px;
+    display: flex;
+    background-color:#1d2126;
+    color: whitesmoke;
+    height: 150px;
+    align-items: center;
+    width: 100%;
+
+}
+  
+.navbar{
+    display: flex;
+    width: 100%;
+    left: 0;
+    top:0;
+    height: 80px;
+    padding-left: 3%;
+    background-color:#1d2126;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.container{
+    position: absolute;
+    right: 80px;
+    width: 550px;
+    
+}
+
+.search{
+    width: 300px;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    border-radius: 15px;
+
+}
+
+button{
+    background-color: #ed0b4c;
+    color: whitesmoke;
+    font-weight: 700;
+    border-radius: 15px;
+    font-size:1rem;
+    height: 40px;
+    width: 80px;
+    margin-left: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.big-container{
+  margin-top: 150px;
+  height: 500px;
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+.mid-container {
+  width: 500px;
+  height: 300px;
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 100px 100px 0 200px; 
+  text-shadow:2px 2px 5px rgba(0, 0, 0, 0.5); ;
+}
+
+#simple-form{
+  padding: 20px 20px 0px 20px;
+  width:400px;
+  height: 450px;
+  margin: 10px 30px 0 100px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+
+.inputBox label {
+  color:  #ed0b4c;
+}
+
+.inputBox input {
+background: transparent;
+border: none;
+border-bottom: 1px solid  #ed0b4c;
+color:  #ed0b4c;
+font-size: 18px;
+letter-spacing: 2px;
+margin-bottom: 30px;
+outline: none;
+padding: 10px 0;
+width: 100%;
+}
+
+.inputBox textarea{
+  background: transparent;
+border: none;
+border-bottom: 1px solid  #ed0b4c;
+color:  #ed0b4c;
+font-size: 18px;
+letter-spacing: 2px;
+margin-bottom: 10px;
+outline: none;
+padding: 10px 0;
+width: 100%;
+}
+
+.submitButton{
+margin-left: 0.1%;
+}
+
+button:hover {
+    background-color:  whitesmoke;
+    color:  #ed0b4c;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 900px) {
+
+    body{
+        width: auto;
+    }
+
+    .title{
+        font-size: 4vw;
+    }
+    .search{
+        width: 40%;
+        height: 85%;
+        
+    }
+    .container{
+        position: absolute;
+        right: 5%;
+        width: 70%;
+    }
+    button{
+        height: 5vh;
+    width: 18%;
+    margin-left: 5vw;
+    font-size: 15px;
+    font-weight: 600;
+    }
+    
+    .big-container{
+      margin-top: 20%;
+      display: flex;
+      flex-direction: column;
+      height: 20%;
+      width: fit-content;
+      display: flex;
+      justify-content: space-between;
+    }
+    footer{
+      margin-top: 20%;
+    }
+    .mid-container {
+      width: 70%;
+      height: 50%;
+      color: white;
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin: 10% 0 0 10%; 
+      text-shadow:2px 2px 5px rgba(0, 0, 0, 0.5); ;
+    }
+    
+    #simple-form{
+      padding: 5% 5% 0px 5%;
+      width:60%;
+      height: 80%;
+      margin: 5% 0 0 10%;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+      border-radius: 10px;
+      background-color: whitesmoke;
+    }
+    
+    .inputBox label {
+      color:  #ed0b4c;
+    }
+    
+    .inputBox input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid  #ed0b4c;
+    color:  #ed0b4c;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    outline: none;
+    padding: 10px 0;
+    width: 100%;
+    }
+    
+    .inputBox textarea{
+      background: transparent;
+    border: none;
+    border-bottom: 1px solid  #ed0b4c;
+    color:  #ed0b4c;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    outline: none;
+    padding: 10px 0;
+    width: 100%;
+    }
+    
+
+  }
+  
+  button {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  .search{
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  .title{
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
